@@ -1,12 +1,12 @@
 {
-  "name": "webhook-notif-system",
+  "name": "",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "dev": "nodemon src/bin.ts",
-    "build": "tsc -b",
-    "start": "node dist/bin.js"
+    "dev": "node init && nodemon src/bin.ts",
+    "build": "node init && tsc -b",
+    "start": "node init && node dist/bin.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@types/supertest": "^6.0.3",
     "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
     "supertest": "^7.1.0",
     "zod": "^3.24.4"
   },
